@@ -11,7 +11,7 @@ This primary data used in the project is:
 * 'X_train.txt': Training set.
 * 'X_test.txt': Test set.
 
-This data consists of 561 'features', comprising time and frequency domain variables for triaxial acceleration(total acceleration), estimated body acceleration and triaxial angular velocity. This data has been generated as follows: The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. Features are normalized and bounded within [-1,1].
+This data consists of 561 'features', comprising time and frequency domain variables for triaxial acceleration (total acceleration), estimated body acceleration and triaxial angular velocity. This data has been generated as follows: The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. Features are normalized and bounded within [-1,1].
 
 The datasets have row labels which specify what activity (1-6) each entry relates to:
 
@@ -37,6 +37,7 @@ The labels for the 6 activities are given in:
 * Uses descriptive activity names to name the activities in the data set
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 ### My approach has involved:
 * Combining the test + train datasets for all variables (columns), including variable names (features) and row labelling for subjects (1-30) and activity descriptors (1-6)
 * Removing duplicate variables and sub-setting the dataset down to only contain variables with "mean" or "std" in their names.
